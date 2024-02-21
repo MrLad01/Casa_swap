@@ -85,6 +85,7 @@
     document.getElementById('closeSignUpModalBtn').addEventListener('click', function() {
     $('#signUpModal').modal('hide');
     });
+    
 
 })(jQuery);
 

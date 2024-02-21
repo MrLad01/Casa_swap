@@ -415,18 +415,91 @@ body {
 }
 
 /*** SIGN UP PAGE ***/
-/* Set a higher z-index for the modal than the navbar */
+/* Setting a higher z-index for the modal than the navbar */
 .modal-backdrop {
-  z-index: 10000 !important; /* Adjust as needed */
+  z-index: 10000 !important;
 }
 /* Position the modal above the navbar */
 .modal {
   position: fixed;
-  top: 50%; /* Adjust as needed */
+  top: 50% !important; /* Adjust as needed */
   left: 50%; /* Adjust as needed */
-  transform: translate(-50%, -50%);
-  z-index: 10051; /* Ensure the z-index is higher than the header */
+  transform: translate(-50%, -40%);
+  z-index: 10051;
+  width: fit-content !important;
+  overflow-x: scroll !important;
 }
 .modal-dialog {
   z-index: 10051 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* close button */
+#closeSignUpModalBtn {
+  outline: none;
+  border: none;
+  background: transparent;
+  z-index: 11000;
+}
+#closeSignUpModalBtn > span {
+  color: #eeeeee;
+  padding: 10px;
+  font-size: 24px;
+}
+
+#signUpModalLabel {
+  font-size: 28px;
+  text-align: center;
+}
+
+.modal-image {
+  max-width: 350px;
+  height: 350px;
+  flex-grow: 0;
+  margin-left: -16px;
+  margin-top: -18px;
+  margin-bottom: -17px;
+}
+
+.modal-body form {
+  background-color: #00b98e;
+  margin-top: -91px;
+  margin-right: -16px;
+  margin-bottom: -16px;
+  padding: 50px 30px 30px 30px;
+}
+
+.modal-body input {
+  width: 300px;
+  margin-bottom: 12px;
+}
+
+.modal-body input::placeholder {
+  font-weight: 100;
+  /* color: #00b98e; */
+  font-size: 13px;
+  opacity: 0.4;
+}
+
+.form-group:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.modal-body label {
+  font-size: 12px;
+  font-weight: bolder;
+  color: #eeeeee;
+}
+.but {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.but button {
+  border: #eeeeee 2px solid;
 }

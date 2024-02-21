@@ -108,7 +108,7 @@
         aria-labelledby="signUpModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
@@ -123,45 +123,56 @@
               </button>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="signupFirstname">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="signupFirstname"
-                    placeholder="Enter your First Name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="signupLastname">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="signupLastname"
-                    placeholder="Enter your Last Name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="signupEmail">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="signupEmail"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="signupPassword">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="signupPassword"
-                    placeholder="Password"
-                  />
-                </div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-              </form>
+              <div class="image-and-form-container d-flex flex-item-1">
+                <img class="modal-image" src="img/Casa.PNG" alt="" />
+                <form>
+                  <div class="form-group">
+                    <label for="signupFirstname">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="signupFirstname"
+                      placeholder="Enter your First Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="signupLastname">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="signupLastname"
+                      placeholder="Enter your Last Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="signupEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="signupEmail"
+                      placeholder="Enter email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="signupPassword"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <div class="but">
+                    <button type="submit" class="btn btn-primary">
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
