@@ -76,6 +76,15 @@
             }
         }
     });
-    
+
+
+    // SignUp modal
+    document.getElementById('openSignUpModalBtn').addEventListener('click', function() {
+        $('#signUpModal').modal('show');
+      });
+    document.getElementById('closeSignUpModalBtn').addEventListener('click', function() {
+    $('#signUpModal').modal('hide');
+    });
+
 })(jQuery);
 
