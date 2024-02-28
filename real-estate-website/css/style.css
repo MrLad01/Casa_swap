@@ -429,6 +429,20 @@ body {
   width: fit-content !important;
   overflow-x: scroll !important;
 }
+@media (max-width: 768px) {
+  .modal {
+    scale: 0.55;
+    transform: translate(-92%, -80%);
+  }
+  #openSignUpModalBtnMoble {
+    display: block !important;
+  }
+}
+
+#openSignUpModalBtnMoble {
+  display: none;
+}
+
 .modal-dialog {
   z-index: 10051 !important;
   display: flex;
